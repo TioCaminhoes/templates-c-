@@ -13,6 +13,8 @@ class Lista:
         no.proximo = self.inicio 
         self.inicio = no
         self.tamanho += 1
+        print("No inserido: ", self.inicio.dado)
+        print("No proximo: ", self.inicio.proximo.dado if self.inicio.proximo else None)
 
     def obter_tamanho(self):
         return self.tamanho
